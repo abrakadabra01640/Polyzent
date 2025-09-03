@@ -5,7 +5,7 @@ export const products = [
     category: 'Pallet Wrapping',
     description: 'Industrial-grade stretch films engineered for superior load containment and pallet stability. Our multi-layer co-extruded films deliver exceptional puncture resistance and cling properties.',
     image: '/images/products/stretch-film.jpg',
-    price: 'Starting from $0.85/kg',
+    price: ' $0.85/kg',
     minOrder: '500 kg',
     features: [
       'Multi-layer co-extrusion technology',
@@ -51,7 +51,7 @@ export const products = [
     category: 'Industrial Liners',
     description: 'Heavy-duty polyethylene liner bags designed for bulk container protection. Engineered to withstand industrial environments while maintaining product integrity.',
     image: '/images/products/liner-bags.jpg',
-    price: 'Starting from $2.50/piece',
+    price: ' $2.50/piece',
     minOrder: '1000 pieces',
     features: [
       'High-density polyethylene construction',
@@ -96,7 +96,7 @@ export const products = [
     category: 'Bulk Packaging',
     description: 'Premium flexible intermediate bulk containers (FIBC) manufactured with virgin polypropylene fabric. Designed for safe handling of bulk materials up to 2000kg capacity.',
     image: '/images/products/jumbo-bags.jpg',
-    price: 'Starting from $8.50/piece',
+    price: ' $8.50/piece',
     minOrder: '100 pieces',
     features: [
       'Virgin polypropylene woven fabric',
@@ -142,7 +142,7 @@ export const products = [
     category: 'Protective Packaging',
     description: 'Multi-layer bubble cushioning films providing superior shock absorption and protection. Available in various bubble sizes and barrier properties for diverse applications.',
     image: '/images/products/bubble-wrap.jpg',
-    price: 'Starting from $1.20/m²',
+    price: ' $1.20/m²',
     minOrder: '500 m²',
     features: [
       'Co-extruded barrier films',
@@ -188,7 +188,7 @@ export const products = [
     category: 'Flexible Packaging',
     description: 'High-density polyethylene bags offering exceptional strength and chemical resistance. Manufactured using blown film technology for consistent quality and performance.',
     image: '/images/products/hdpe-bags.jpg',
-    price: 'Starting from $0.15/piece',
+    price: '$0.15/piece',
     minOrder: '10,000 pieces',
     features: [
       'High-density polyethylene construction',
@@ -234,7 +234,7 @@ export const products = [
     category: 'Eco-Friendly Packaging',
     description: 'Sustainable kraft paper bags manufactured from recycled and virgin materials. Offering excellent printability and strength for retail and industrial applications.',
     image: '/images/products/paper-bags.jpg',
-    price: 'Starting from $0.25/piece',
+    price: '$0.25/piece',
     minOrder: '5,000 pieces',
     features: [
       'Virgin and recycled kraft paper',
@@ -280,7 +280,7 @@ export const products = [
     category: 'Strapping Materials',
     description: 'High-tensile polypropylene strapping rolls designed for heavy-duty bundling and securing applications. Manufactured with advanced polymer technology for maximum strength.',
     image: '/images/products/pp-strip-roll.jpg',
-    price: 'Starting from $1.80/kg',
+    price: ' $1.80/kg',
     minOrder: '200 kg',
     features: [
       'High-grade polypropylene resin',

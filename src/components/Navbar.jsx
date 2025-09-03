@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { RiMenuLine, RiCloseLine } from 'react-icons/ri';
+import { useLocation, Link } from 'react-router-dom';
 import Logo from '../Assets/image.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [currentPath, setCurrentPath] = useState('/');
+  const location = useLocation();
+  const currentPath = location.pathname;
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -14,9 +16,14 @@ const Navbar = () => {
     { name: 'Contact Us', href: '/contact' }
   ];
 
-  const handleNavClick = (href) => {
-    setCurrentPath(href);
+  const handleNavClick = () => {
     setIsOpen(false);
+    // Scroll to top when navigating
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   };
 
   return (
@@ -31,17 +38,17 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16 lg:h-20">
 
             {/* Logo */}
-            <a
-              href="/"
+            <Link
+              to="/"
               className="flex items-center"
-              onClick={() => handleNavClick('/')}
+              onClick={handleNavClick}
             >
               <img
                 src={Logo}
                 alt="Polyzent Trading Inc Logo"
                 className="h-32 w-auto lg:h-36"
               />
-            </a>
+            </Link>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
@@ -57,9 +64,9 @@ const Navbar = () => {
                       ease: [0.25, 0.46, 0.45, 0.94]
                     }}
                   >
-                    <a
-                      href={link.href}
-                      onClick={() => handleNavClick(link.href)}
+                    <Link
+                      to={link.href}
+                      onClick={handleNavClick}
                       className={`relative px-3 py-2 font-medium text-sm lg:text-base transition-all duration-300 group ${currentPath === link.href
                         ? 'text-amber-400'
                         : 'text-gray-300 hover:text-white'
@@ -79,7 +86,7 @@ const Navbar = () => {
                           }`}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                       />
-                    </a>
+                    </Link>
                   </motion.div>
                 ))}
               </nav>
@@ -90,7 +97,7 @@ const Navbar = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8, duration: 0.5 }}
               >
-                <a href="/contact">
+                <Link to="/contact" onClick={handleNavClick}>
                   <motion.button
                     whileHover={{
                       scale: 1.05,
@@ -113,7 +120,7 @@ const Navbar = () => {
                       }}
                     />
                   </motion.button>
-                </a>
+                </Link>
               </motion.div>
             </div>
 
@@ -223,9 +230,9 @@ const Navbar = () => {
                           ease: [0.25, 0.46, 0.45, 0.94]
                         }}
                       >
-                        <a
-                          href={link.href}
-                          onClick={() => handleNavClick(link.href)}
+                        <Link
+                          to={link.href}
+                          onClick={handleNavClick}
                           className={`group flex items-center px-4 py-4 text-base font-medium rounded-xl transition-all duration-300 ${currentPath === link.href
                             ? 'text-amber-400 bg-gradient-to-r from-amber-400/20 to-orange-400/10 border-l-4 border-amber-400'
                             : 'text-gray-300 hover:text-white hover:bg-slate-800/80 hover:translate-x-2'
@@ -240,7 +247,7 @@ const Navbar = () => {
                               transition={{ duration: 0.3 }}
                             />
                           </span>
-                        </a>
+                        </Link>
                       </motion.div>
                     ))}
                   </motion.nav>
@@ -253,12 +260,11 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.6, duration: 0.5 }}
                   >
-                    <a href="/contact">
+                    <Link to="/contact" onClick={handleNavClick}>
                       <motion.button
                         whileHover={{ scale: 1.02, y: -2 }}
                         whileTap={{ scale: 0.98 }}
                         className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-900 px-6 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:shadow-xl hover:shadow-amber-500/25 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-900 relative overflow-hidden group"
-                        onClick={() => setIsOpen(false)}
                       >
                         <span className="relative z-10">Get Quote</span>
 
@@ -274,7 +280,7 @@ const Navbar = () => {
                           }}
                         />
                       </motion.button>
-                    </a>
+                    </Link>
                   </motion.div>
                 </div>
               </div>

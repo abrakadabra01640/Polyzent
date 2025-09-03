@@ -85,7 +85,7 @@ const Sustainability = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-linen to-green-50">
+    <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -94,11 +94,17 @@ const Sustainability = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-green-600 font-medium text-sm tracking-wider uppercase">Environmental Commitment</span>
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-dark-slate mt-2 mb-6">
-            Sustainability & Responsibility
+          <div className="inline-flex items-center px-4 py-2 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-6">
+            <span className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+            Environmental Commitment
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+            Sustainability &{' '}
+            <span className="bg-gradient-to-r from-green-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent">
+              Responsibility
+            </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             Leading the industry towards a greener future through innovative sustainable practices 
             and environmental stewardship
           </p>
@@ -115,10 +121,10 @@ const Sustainability = () => {
           >
             <div className="space-y-6">
               <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="text-2xl font-heading font-bold text-dark-slate mb-4">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">
                   Our Green Commitment
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-slate-600 leading-relaxed mb-6">
                   At Polyzent Trading Inc, sustainability isn't just a buzzword – it's at the core 
                   of everything we do. We're committed to reducing our environmental impact while 
                   delivering exceptional packaging solutions that help our clients achieve their 
@@ -130,7 +136,7 @@ const Sustainability = () => {
                       <div className="w-6 h-6 bg-green-100 rounded-lg flex items-center justify-center text-green-600">
                         {cert.icon}
                       </div>
-                      <span className="text-gray-600">{cert.name}</span>
+                      <span className="text-slate-600">{cert.name}</span>
                     </div>
                   ))}
                 </div>
@@ -199,7 +205,7 @@ const Sustainability = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 md:p-12 text-white text-center"
         >
-          <h3 className="text-3xl font-heading font-bold mb-4">
+          <h3 className="text-3xl font-bold mb-4">
             Join Us in Building a Sustainable Future
           </h3>
           <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto">

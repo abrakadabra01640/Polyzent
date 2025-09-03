@@ -40,7 +40,7 @@ const AboutCTA = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-dark-slate via-gray-800 to-dark-slate">
+    <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white">
           <motion.div
@@ -50,11 +50,18 @@ const AboutCTA = () => {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <span className="text-amber-400 font-medium text-sm tracking-wider uppercase">Ready to Get Started?</span>
-            <h2 className="text-4xl md:text-6xl font-bold mt-4 mb-6">
-              Partner with <span className="text-amber-400">Polyzent</span> for Your Packaging Needs
+            <div className="inline-flex items-center px-4 py-2 bg-amber-500/10 text-amber-400 rounded-full text-sm font-medium mb-6">
+              <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse"></span>
+              Ready to Get Started?
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Partner with{' '}
+              <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
+                Polyzent
+              </span>{' '}
+              for Your Packaging Needs
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
               Join hundreds of satisfied clients who trust us with their packaging requirements. 
               Let's discuss how we can help protect and enhance your products.
             </p>

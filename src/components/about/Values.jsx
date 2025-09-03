@@ -51,11 +51,17 @@ const Values = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-harvest-gold font-medium text-sm tracking-wider uppercase">Our Foundation</span>
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-dark-slate mt-2 mb-6">
-            Core Values
+          <div className="inline-flex items-center px-4 py-2 bg-amber-100 text-amber-800 rounded-full text-sm font-medium mb-6">
+            <span className="w-2 h-2 bg-amber-500 rounded-full mr-2 animate-pulse"></span>
+            Our Foundation
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+            Core{' '}
+            <span className="bg-gradient-to-r from-amber-600 via-orange-500 to-red-500 bg-clip-text text-transparent">
+              Values
+            </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
             The principles that guide our operations and define our company culture
           </p>
         </motion.div>
@@ -70,24 +76,24 @@ const Values = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group"
             >
-              <div className="bg-gradient-to-br from-linen to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center h-full border border-gray-100 group-hover:border-harvest-gold/20">
+              <div className="bg-gradient-to-br from-slate-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center h-full border border-slate-100 group-hover:border-amber-300/20">
                 {/* Icon */}
-                <div className="w-16 h-16 bg-harvest-gold text-dark-slate rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-amber-500 to-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                   {value.icon}
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-heading font-bold text-dark-slate mb-4 group-hover:text-harvest-gold transition-colors duration-300">
+                <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-amber-600 transition-colors duration-300">
                   {value.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-600 leading-relaxed text-sm">
+                <p className="text-slate-600 leading-relaxed text-sm">
                   {value.description}
                 </p>
 
                 {/* Decorative Element */}
-                <div className="mt-6 w-12 h-1 bg-gradient-to-r from-harvest-gold to-yellow-500 rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="mt-6 w-12 h-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </motion.div>
           ))}
@@ -101,25 +107,25 @@ const Values = () => {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-dark-slate to-gray-800 rounded-2xl p-8 text-white">
-            <h3 className="text-2xl font-heading font-bold mb-4">
+          <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-2xl p-8 text-white">
+            <h3 className="text-2xl font-bold mb-4">
               Experience Our Values in Action
             </h3>
-            <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
               These values aren't just words on a page – they're the foundation of every 
               interaction, every product, and every solution we deliver.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <div className="flex items-center text-harvest-gold">
-                <div className="w-2 h-2 bg-harvest-gold rounded-full mr-2"></div>
+              <div className="flex items-center text-amber-400">
+                <div className="w-2 h-2 bg-amber-400 rounded-full mr-2"></div>
                 <span className="text-sm">Trusted by 500+ companies</span>
               </div>
-              <div className="flex items-center text-harvest-gold">
-                <div className="w-2 h-2 bg-harvest-gold rounded-full mr-2"></div>
+              <div className="flex items-center text-amber-400">
+                <div className="w-2 h-2 bg-amber-400 rounded-full mr-2"></div>
                 <span className="text-sm">13+ years of excellence</span>
               </div>
-              <div className="flex items-center text-harvest-gold">
-                <div className="w-2 h-2 bg-harvest-gold rounded-full mr-2"></div>
+              <div className="flex items-center text-amber-400">
+                <div className="w-2 h-2 bg-amber-400 rounded-full mr-2"></div>
                 <span className="text-sm">Global reach, local service</span>
               </div>
             </div>
