@@ -8,14 +8,10 @@ export const products = [
     price: ' $0.85/kg',
     minOrder: '500 kg',
     features: [
-      'Multi-layer co-extrusion technology',
-      'Superior load holding force (up to 300% stretch)',
-      'Excellent puncture and tear resistance',
-      'UV stabilized for outdoor storage',
-      'Pre-stretched options available',
-      'Machine and hand grade variants',
-      'Silent unwind technology',
-      'Temperature resistant (-40°C to +60°C)'
+      'Superior puncture resistance for secure load containment',
+      '99.9% load stability ensures safe transportation',
+      'Exceptional 500% stretch capability for cost efficiency',
+      'UV stabilized for outdoor storage applications'
     ],
     benefits: [
       'Reduces product damage by 95%',

@@ -7,7 +7,6 @@ const ContactForm = () => {
     companyName: '',
     email: '',
     phone: '',
-    inquiryType: '',
     message: ''
   });
 
@@ -25,8 +24,26 @@ const ContactForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Replace 'YOUR_GOOGLE_FORM_ACTION_URL' with your actual Google Form action URL
+      const GOOGLE_FORM_ACTION_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdxuG2RCP30pEvaSK1t_RGn30neiDung7SYkFUcX-uPg2OtLQ/formResponse?usp=header';
+      
+      // Create FormData object for Google Forms
+      const formDataToSubmit = new FormData();
+      formDataToSubmit.append('entry.1464250673', formData.fullName); // Replace with actual entry IDs
+      formDataToSubmit.append('entry.880596246', formData.companyName);
+      formDataToSubmit.append('entry.573073327', formData.email);
+      formDataToSubmit.append('entry.1756790717', formData.phone);
+      formDataToSubmit.append('entry.1794923337', formData.message);
+      
+      // Submit to Google Form
+      const response = await fetch(GOOGLE_FORM_ACTION_URL, {
+        method: 'POST',
+        mode: 'no-cors', // Google Forms doesn't support CORS
+        body: formDataToSubmit
+      });
+      
+      // Since we can't get response due to no-cors, we'll assume success
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({
@@ -34,22 +51,19 @@ const ContactForm = () => {
         companyName: '',
         email: '',
         phone: '',
-        inquiryType: '',
         message: ''
       });
       
       setTimeout(() => setSubmitStatus(null), 5000);
-    }, 2000);
+      
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+      setTimeout(() => setSubmitStatus(null), 5000);
+    }
   };
 
-  const inquiryTypes = [
-    'General Inquiry',
-    'Product Information',
-    'Custom Packaging Solution',
-    'Bulk Order Quote',
-    'Technical Support',
-    'Partnership Opportunity'
-  ];
 
   return (
     <section className="py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50">
@@ -84,6 +98,24 @@ const ContactForm = () => {
                   <div>
                     <p className="font-semibold">Message sent successfully!</p>
                     <p className="text-sm">We'll respond to your inquiry soon.</p>
+                  </div>
+                </div>
+              </motion.div>
+            )}
+
+            {submitStatus === 'error' && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="bg-red-50 border border-red-200 text-red-800 px-6 py-4 rounded-xl mb-8"
+              >
+                <div className="flex items-center">
+                  <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                  </svg>
+                  <div>
+                    <p className="font-semibold">Error sending message</p>
+                    <p className="text-sm">Please try again or contact us directly.</p>
                   </div>
                 </div>
               </motion.div>
@@ -154,24 +186,6 @@ const ContactForm = () => {
                 </div>
               </div>
 
-              <div>
-                <label htmlFor="inquiryType" className="block text-sm font-semibold text-slate-700 mb-2">
-                  Inquiry Type *
-                </label>
-                <select
-                  id="inquiryType"
-                  name="inquiryType"
-                  value={formData.inquiryType}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all duration-300"
-                >
-                  <option value="">Select inquiry type</option>
-                  {inquiryTypes.map((type) => (
-                    <option key={type} value={type}>{type}</option>
-                  ))}
-                </select>
-              </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-semibold text-slate-700 mb-2">

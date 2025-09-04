@@ -167,38 +167,7 @@ const Footer = () => {
                     </motion.div>
                 </div>
 
-                {/* Newsletter Section */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.4 }}
-                    className="border-t border-slate-700/50 mt-12 pt-8"
-                >
-                    <div className="max-w-md mx-auto text-center lg:text-left lg:mx-0">
-                        <h4 className="text-lg font-bold mb-3 bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
-                            Stay Updated
-                        </h4>
-                        <p className="text-gray-400 text-sm mb-4">
-                            Get the latest news and updates delivered to your inbox.
-                        </p>
-                        <div className="flex flex-col sm:flex-row gap-3">
-                            <input
-                                type="email"
-                                placeholder="Enter your email"
-                                className="flex-1 px-4 py-3 bg-slate-800/50 border border-slate-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 transition-all duration-300"
-                            />
-                            <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
-                                className="px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-slate-900 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-amber-500/25"
-                            >
-                                Subscribe
-                            </motion.button>
-                        </div>
-                    </div>
-                </motion.div>
-
+              
                 {/* Bottom Bar */}
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -210,17 +179,7 @@ const Footer = () => {
                     <p className="text-gray-500 text-sm mb-4 md:mb-0">
                         © {new Date().getFullYear()} Your Company. All rights reserved.
                     </p>
-                    <div className="flex space-x-6 text-sm">
-                        <a href="#" className="text-gray-500 hover:text-amber-400 transition-colors duration-300">
-                            Privacy Policy
-                        </a>
-                        <a href="#" className="text-gray-500 hover:text-amber-400 transition-colors duration-300">
-                            Terms of Service
-                        </a>
-                        <a href="#" className="text-gray-500 hover:text-amber-400 transition-colors duration-300">
-                            Cookies
-                        </a>
-                    </div>
+            
                 </motion.div>
             </div>
         </footer>

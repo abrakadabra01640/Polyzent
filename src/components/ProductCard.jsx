@@ -55,21 +55,7 @@ const ProductCard = ({ product, index }) => {
               <h3 className="text-xl font-bold text-amber-600 group-hover:text-orange-600 transition-colors duration-300 leading-tight">
                 {product.name}
               </h3>
-              {product.price && (
-                <div className="text-right">
-                  <div className="text-sm text-slate-600 mb-1">
-                    Starting from
-                  </div>
-                  <div className="text-lg font-bold text-amber-600">
-                    {product.price}
-                  </div>
-                  {product.minOrder && (
-                    <div className="text-xs text-slate-500 mt-1">
-                      MOQ: {product.minOrder}
-                    </div>
-                  )}
-                </div>
-              )}
+ 
             </div>
             
             <p className="text-slate-600 text-sm leading-relaxed mb-4">

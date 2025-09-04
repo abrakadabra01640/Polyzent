@@ -110,26 +110,12 @@ const ProductDetail = () => {
                 </p>
               </div>
 
-              {/* Key Stats */}
-              <div className="grid grid-cols-2 gap-6">
-                {product.price && (
-                  <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl p-6 border border-amber-200">
-                    <div className="text-2xl font-bold text-amber-600 mb-1">{product.price}</div>
-                    <div className="text-sm text-slate-600">Starting Price</div>
-                  </div>
-                )}
-                {product.minOrder && (
-                  <div className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-6 border border-slate-200">
-                    <div className="text-2xl font-bold text-slate-900 mb-1">{product.minOrder}</div>
-                    <div className="text-sm text-slate-600">Minimum Order</div>
-                  </div>
-                )}
-              </div>
+         
 
               {/* Quick Features */}
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-4">Key Features</h3>
-                <div className="grid grid-cols-1 gap-3">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {product.features.slice(0, 4).map((feature, index) => (
                     <div key={index} className="flex items-center">
                       <svg className="w-5 h-5 text-amber-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -195,7 +181,7 @@ const ProductDetail = () => {
                   <p className="text-slate-600 leading-relaxed text-lg">{product.description}</p>
                 </div>
 
-                {/* Benefits */}
+                {/* Key Features */}
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900 mb-6 flex items-center">
                     <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg flex items-center justify-center mr-3">
@@ -203,15 +189,15 @@ const ProductDetail = () => {
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                     </div>
-                    Key Benefits
+                    Key Features
                   </h3>
                   <ul className="space-y-3">
-                    {product.benefits.map((benefit, index) => (
+                    {product.features.map((feature, index) => (
                       <li key={index} className="flex items-start">
                         <svg className="w-5 h-5 text-green-600 mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                         </svg>
-                        <span className="text-slate-700">{benefit}</span>
+                        <span className="text-slate-700">{feature}</span>
                       </li>
                     ))}
                   </ul>
