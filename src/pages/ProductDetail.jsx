@@ -136,7 +136,7 @@ const ProductDetail = () => {
                   Request Quote
                 </Link>
                 <Link
-                  to="tel:+919876543210"
+                  to="tel:+18153294126"
                   className="flex-1 bg-slate-900 text-white px-8 py-4 rounded-xl font-semibold text-center hover:bg-slate-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   Call Now

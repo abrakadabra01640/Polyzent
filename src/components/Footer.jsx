@@ -1,6 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { RiMailLine, RiPhoneLine, RiMapPinLine, RiLinkedinBoxLine, RiFacebookBoxLine, RiTwitterLine } from 'react-icons/ri';
+import { 
+    RiMailLine, 
+    RiPhoneLine, 
+    RiMapPinLine, 
+    RiLinkedinBoxLine, 
+    RiFacebookBoxLine, 
+    RiTwitterLine 
+} from 'react-icons/ri';
 import Logo from '../Assets/image.png';
 
 const Footer = () => {
@@ -12,12 +19,13 @@ const Footer = () => {
     ];
 
     const products = [
-        'Premium Packaging',
-        'Industrial Solutions',
-        'Eco-Friendly Options',
-        'Custom Designs',
-        'Bulk Orders',
-        'Quality Assurance',
+        { name: 'Stretch Film', href: '/products/stretch-film' },
+        { name: 'Liner Bags', href: '/products/liner-bags' },
+        { name: 'Jumbo Bags (FIBC)', href: '/products/jumbo-bags' },
+        { name: 'Bubble Wrap', href: '/products/bubble-wrap' },
+        { name: 'HDPE Bags', href: '/products/hdpe-bags' },
+        { name: 'Paper Bags', href: '/products/paper-bags' },
+        { name: 'PP Strip Roll', href: '/products/pp-strip-roll' },
     ];
 
     const contactInfo = [
@@ -28,13 +36,18 @@ const Footer = () => {
         },
         {
             icon: RiPhoneLine,
-            text: '+1 (555) 123-4567',
-            href: 'tel:+15551234567'
+            text: '+1 (815) 319-5496',
+            href: 'tel:+18153195496'
+        },
+        {
+            icon: RiPhoneLine,
+            text: '+1 (815) 329-4126',
+            href: 'tel:+18153294126'
         },
         {
             icon: RiMapPinLine,
-            text: '123 Business St, City, State 12345',
-            href: 'https://maps.google.com'
+            text: '1000 Robins Road, Building 1, Lynchburg, VA 24502',
+            href: 'https://www.google.com/maps/search/?api=1&query=1000+Robins+Road,+Building+1,+Lynchburg,+VA+24502'
         }
     ];
 
@@ -67,7 +80,7 @@ const Footer = () => {
                             <img
                                 src={Logo}
                                 alt="Polyzent Trading Inc Logo"
-                                className="h-40 w-auto"
+                                className="h-28 w-auto"
                             />
                         </div>
                         
@@ -91,21 +104,7 @@ const Footer = () => {
                             ))}
                         </div>
 
-                        {/* Social Links */}
-                        <div className="flex space-x-4">
-                            {socialLinks.map((social, index) => (
-                                <motion.a
-                                    key={index}
-                                    href={social.href}
-                                    aria-label={social.label}
-                                    className="p-3 bg-slate-800/50 rounded-lg text-gray-400 hover:text-amber-400 hover:bg-slate-700/70 transition-all duration-300"
-                                    whileHover={{ scale: 1.1, y: -2 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <social.icon className="w-5 h-5" />
-                                </motion.a>
-                            ))}
-                        </div>
+                        
                     </motion.div>
 
                     {/* Quick Links */}
@@ -147,27 +146,30 @@ const Footer = () => {
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
                         <h4 className="text-xl font-bold mb-6 bg-gradient-to-r from-amber-400 to-orange-400 bg-clip-text text-transparent">
-                            Our Services
+                            Our Products
                         </h4>
                         <ul className="space-y-3">
                             {products.map((product, index) => (
                                 <motion.li
-                                    key={product}
+                                    key={product.name}
                                     initial={{ opacity: 0, x: -20 }}
                                     whileInView={{ opacity: 1, x: 0 }}
                                     viewport={{ once: true }}
                                     transition={{ delay: index * 0.1 + 0.3 }}
-                                    className="text-gray-400 text-sm flex items-center hover:text-gray-300 transition-colors duration-300"
                                 >
-                                    <div className="w-1.5 h-1.5 bg-amber-400 rounded-full mr-3 opacity-70"></div>
-                                    {product}
+                                    <a 
+                                        href={product.href} 
+                                        className="text-gray-400 text-sm flex items-center hover:text-gray-300 transition-colors duration-300"
+                                    >
+                                        <div className="w-1.5 h-1.5 bg-amber-400 rounded-full mr-3 opacity-70"></div>
+                                        {product.name}
+                                    </a>
                                 </motion.li>
                             ))}
                         </ul>
                     </motion.div>
                 </div>
 
-              
                 {/* Bottom Bar */}
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -177,9 +179,8 @@ const Footer = () => {
                     className="border-t border-slate-700/50 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
                 >
                     <p className="text-gray-500 text-sm mb-4 md:mb-0">
-                        © {new Date().getFullYear()} Your Company. All rights reserved.
+                        © {new Date().getFullYear()} Polyzent Trading Inc. All rights reserved.
                     </p>
-            
                 </motion.div>
             </div>
         </footer>

@@ -12,8 +12,8 @@ const AboutCTA = () => {
       ),
       title: 'Call Us',
       description: 'Speak with our experts',
-      action: '+91 98765 43210',
-      link: 'tel:+919876543210',
+      action: '+1 815 329 4126',
+      link: 'tel:+18153294126',
     },
     {
       icon: (
@@ -25,17 +25,6 @@ const AboutCTA = () => {
       description: 'Get detailed information',
       action: 'info@polyzentrading.com',
       link: 'mailto:info@polyzentrading.com',
-    },
-    {
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 9l2 2 4-4m0-6v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9a2 2 0 012-2h2a2 2 0 012 2z" />
-        </svg>
-      ),
-      title: 'Schedule Meeting',
-      description: 'Book a consultation',
-      action: 'Book Now',
-      link: '#',
     },
   ];
 
@@ -73,7 +62,7 @@ const AboutCTA = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12"
           >
             {contactMethods.map((method, index) => (
               <div key={method.title} className="group">

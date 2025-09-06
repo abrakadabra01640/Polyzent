@@ -46,7 +46,7 @@ const ContactHero = () => {
                 </div>
                 <div>
                   <p className="text-sm text-slate-400">Call Us</p>
-                  <p className="text-white font-medium">+91 98765 43210</p>
+                  <p className="text-white font-medium">+1 815 329 4126</p>
                 </div>
               </div>
               

@@ -197,37 +197,7 @@ const Sustainability = () => {
           ))}
         </div>
 
-        {/* Bottom CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-gradient-to-r from-green-600 to-green-700 rounded-2xl p-8 md:p-12 text-white text-center"
-        >
-          <h3 className="text-3xl font-bold mb-4">
-            Join Us in Building a Sustainable Future
-          </h3>
-          <p className="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
-            Partner with us to create packaging solutions that protect your products 
-            and our planet. Together, we can make a positive impact.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-green-200">2030</div>
-              <div className="text-sm text-green-100">Carbon Neutral Goal</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-green-200">100%</div>
-              <div className="text-sm text-green-100">Renewable Energy</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-green-200">Zero</div>
-              <div className="text-sm text-green-100">Waste to Landfill</div>
-            </div>
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   );

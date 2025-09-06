@@ -181,7 +181,7 @@ const ContactForm = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all duration-300"
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 12345 67890"
                   />
                 </div>
               </div>
@@ -249,8 +249,8 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Phone</h4>
-                  <p className="text-slate-600 mb-2">+91 98765 43210</p>
-                  <p className="text-sm text-slate-500">Mon-Sat: 9:00 AM - 6:00 PM IST</p>
+                  <p className="text-slate-600 mb-2">+1 815 329 4126</p>
+                  <p className="text-sm text-slate-500">Mon-Sat: 9:00 AM - 6:00 PM</p>
                 </div>
               </div>
 
@@ -276,9 +276,9 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Address</h4>
-                  <p className="text-slate-600 mb-1">123 Industrial Park</p>
-                  <p className="text-slate-600 mb-2">Mumbai, Maharashtra 400001</p>
-                  <p className="text-sm text-slate-500">India</p>
+                  <p className="text-slate-600 mb-1">1000 Robins Road</p>
+                  <p className="text-slate-600 mb-2">Building 1, Lynchburg</p>
+                  <p className="text-sm text-slate-500">VA 24502</p>
                 </div>
               </div>
             </div>

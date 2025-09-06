@@ -133,15 +133,6 @@ const WhyChooseUs = () => {
               transition={{ duration: 0.6, delay: 0.8 }}
               className="mt-8"
             >
-              <a
-                href="/about"
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white font-semibold rounded-xl hover:from-amber-600 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                Learn More About Us
-                <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                </svg>
-              </a>
             </motion.div>
           </motion.div>
         </div>

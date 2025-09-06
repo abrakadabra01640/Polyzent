@@ -9,8 +9,6 @@ const Testimonials = () => {
       id: 1,
       name: 'Sarah Johnson',
       position: 'Supply Chain Director',
-      company: 'Global Foods Corp',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80',
       quote: 'Polyzent Trading has been our trusted packaging partner for over 5 years. Their quality consistency and reliable delivery schedules have helped us maintain our product integrity across global markets.',
       rating: 5
     },
@@ -18,8 +16,6 @@ const Testimonials = () => {
       id: 2,
       name: 'Michael Chen',
       position: 'Operations Manager',
-      company: 'PharmaCare Ltd',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80',
       quote: 'The pharmaceutical-grade packaging solutions from Polyzent exceed our stringent requirements. Their attention to regulatory compliance and sterile packaging standards is exceptional.',
       rating: 5
     },
@@ -27,9 +23,21 @@ const Testimonials = () => {
       id: 3,
       name: 'Emily Rodriguez',
       position: 'Procurement Head',
-      company: 'MegaRetail Chain',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=150&q=80',
       quote: 'Working with Polyzent has streamlined our packaging operations significantly. Their custom solutions and responsive customer service make them an invaluable business partner.',
+      rating: 5
+    },
+    {
+      id: 4,
+      name: 'David Miller',
+      position: 'Logistics Head',
+      quote: 'Polyzent’s timely deliveries and innovative packaging designs have simplified our distribution process and reduced costs. Truly a dependable partner.',
+      rating: 5
+    },
+    {
+      id: 5,
+      name: 'Aisha Khan',
+      position: 'Quality Assurance Manager',
+      quote: 'We value Polyzent for their unmatched commitment to quality. Their packaging has consistently passed all our compliance and durability checks.',
       rating: 5
     }
   ];
@@ -100,24 +108,14 @@ const Testimonials = () => {
                 ))}
               </div>
 
-              {/* Client Info */}
-              <div className="flex items-center justify-center">
-                <img
-                  src={testimonials[currentTestimonial].image}
-                  alt={testimonials[currentTestimonial].name}
-                  className="w-16 h-16 rounded-full object-cover mr-4 shadow-lg"
-                />
-                <div className="text-left">
-                  <h4 className="text-lg font-semibold text-slate-900">
-                    {testimonials[currentTestimonial].name}
-                  </h4>
-                  <p className="text-amber-600 font-medium">
-                    {testimonials[currentTestimonial].position}
-                  </p>
-                  <p className="text-slate-600 text-sm">
-                    {testimonials[currentTestimonial].company}
-                  </p>
-                </div>
+              {/* Client Info (No image & company) */}
+              <div className="text-center">
+                <h4 className="text-lg font-semibold text-slate-900">
+                  {testimonials[currentTestimonial].name}
+                </h4>
+                <p className="text-amber-600 font-medium">
+                  {testimonials[currentTestimonial].position}
+                </p>
               </div>
             </motion.div>
           </AnimatePresence>
