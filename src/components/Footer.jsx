@@ -24,7 +24,6 @@ const Footer = () => {
         { name: 'Jumbo Bags (FIBC)', href: '/products/jumbo-bags' },
         { name: 'Bubble Wrap', href: '/products/bubble-wrap' },
         { name: 'HDPE Bags', href: '/products/hdpe-bags' },
-        { name: 'Paper Bags', href: '/products/paper-bags' },
         { name: 'PP Strip Roll', href: '/products/pp-strip-roll' },
     ];
 
