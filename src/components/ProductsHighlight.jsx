@@ -10,7 +10,7 @@ const ProductsHighlight = () => {
   const products = [
     {
       id: 1,
-      name: 'Shrink Wrap Film',
+      name: 'Stretch Film Wrap',
       description: 'High-quality shrink films for secure packaging and product protection.',
       image: ShrinkWrap,
       link: '/products/stretch-film'

@@ -232,52 +232,52 @@ export const products = [
     ],
     certifications: ['FDA 21 CFR 177.1520', 'EU 10/2011', 'ISO 9001:2015', 'BRC Packaging']
   },
-  {
-    id: 'paper-bags',
-    name: 'Paper Bags',
-    category: 'Eco-Friendly Packaging',
-    description: 'Sustainable kraft paper bags manufactured from recycled and virgin materials. Offering excellent printability and strength for retail and industrial applications.',
-    image: paper,
-    price: '$0.25/piece',
-    minOrder: '5,000 pieces',
-    features: [
-      'Virgin and recycled kraft paper',
-      'Water-based inks and adhesives',
-      'Multiple handle options',
-      'Grease and moisture resistant coatings',
-      'Custom printing and branding',
-      'Reinforced bottom construction',
-      'Biodegradable and compostable',
-      'FSC certified materials'
-    ],
-    benefits: [
-      '100% recyclable and biodegradable',
-      'Enhanced brand visibility',
-      'Consumer preference for eco-friendly',
-      'Strong load-bearing capacity',
-      'Cost-effective marketing tool',
-      'Regulatory compliance ready'
-    ],
-    specifications: {
-      material: 'Kraft paper 70-300 GSM',
-      sizes: '6" x 9" to 18" x 24"',
-      handles: 'Twisted, flat, rope, die-cut',
-      printing: 'Flexo, offset, digital',
-      coating: 'PE, PLA, or barrier coatings',
-      capacity: '2-25 kg load bearing',
-      applications: ['Retail bags', 'Food service', 'Gift packaging']
-    },
-    applications: [
-      'Retail and shopping centers',
-      'Food service and restaurants',
-      'Grocery and supermarkets',
-      'Gift and promotional packaging',
-      'Pharmaceutical packaging',
-      'Industrial component packaging',
-      'Event and conference materials'
-    ],
-    certifications: ['FSC Certified', 'PEFC Chain of Custody', 'Compostable ASTM D6400', 'FDA Food Contact']
-  },
+  // {
+  //   id: 'paper-bags',
+  //   name: 'Paper Bags',
+  //   category: 'Eco-Friendly Packaging',
+  //   description: 'Sustainable kraft paper bags manufactured from recycled and virgin materials. Offering excellent printability and strength for retail and industrial applications.',
+  //   image: paper,
+  //   price: '$0.25/piece',
+  //   minOrder: '5,000 pieces',
+  //   features: [
+  //     'Virgin and recycled kraft paper',
+  //     'Water-based inks and adhesives',
+  //     'Multiple handle options',
+  //     'Grease and moisture resistant coatings',
+  //     'Custom printing and branding',
+  //     'Reinforced bottom construction',
+  //     'Biodegradable and compostable',
+  //     'FSC certified materials'
+  //   ],
+  //   benefits: [
+  //     '100% recyclable and biodegradable',
+  //     'Enhanced brand visibility',
+  //     'Consumer preference for eco-friendly',
+  //     'Strong load-bearing capacity',
+  //     'Cost-effective marketing tool',
+  //     'Regulatory compliance ready'
+  //   ],
+  //   specifications: {
+  //     material: 'Kraft paper 70-300 GSM',
+  //     sizes: '6" x 9" to 18" x 24"',
+  //     handles: 'Twisted, flat, rope, die-cut',
+  //     printing: 'Flexo, offset, digital',
+  //     coating: 'PE, PLA, or barrier coatings',
+  //     capacity: '2-25 kg load bearing',
+  //     applications: ['Retail bags', 'Food service', 'Gift packaging']
+  //   },
+  //   applications: [
+  //     'Retail and shopping centers',
+  //     'Food service and restaurants',
+  //     'Grocery and supermarkets',
+  //     'Gift and promotional packaging',
+  //     'Pharmaceutical packaging',
+  //     'Industrial component packaging',
+  //     'Event and conference materials'
+  //   ],
+  //   certifications: ['FSC Certified', 'PEFC Chain of Custody', 'Compostable ASTM D6400', 'FDA Food Contact']
+  // },
   {
     id: 'pp-strip-roll',
     name: 'PP Strip Roll',

@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import CTAButton from './CTAButton';
 import PolyzenIndustrialLogo from './PolyzenIndustrialLogo';
+import heroimg from '../Assets/hero.jpg'
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+          src= {heroimg}
           alt="Modern packaging warehouse"
           className="w-full h-full object-cover"
         />
@@ -95,7 +96,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto"
         >
-          <div className="text-center">
+          {/* <div className="text-center">
             <div className="text-2xl sm:text-3xl font-bold text-amber-400 mb-1 sm:mb-2">15+</div>
             <div className="text-slate-300 text-sm sm:text-base">Years Experience</div>
           </div>
@@ -106,7 +107,7 @@ const Hero = () => {
           <div className="text-center">
             <div className="text-2xl sm:text-3xl font-bold text-amber-400 mb-1 sm:mb-2">50+</div>
             <div className="text-slate-300 text-sm sm:text-base">Countries Served</div>
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>

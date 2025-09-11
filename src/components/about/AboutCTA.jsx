@@ -123,7 +123,7 @@ const AboutCTA = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="border-t border-white/20 pt-8"
           >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-2xl font-bold text-amber-400 mb-1">24/7</div>
                 <div className="text-sm text-slate-400">Customer Support</div>
@@ -135,10 +135,6 @@ const AboutCTA = () => {
               <div>
                 <div className="text-2xl font-bold text-amber-400 mb-1">99.8%</div>
                 <div className="text-sm text-slate-400">Client Satisfaction</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-amber-400 mb-1">15+</div>
-                <div className="text-sm text-slate-400">Years Experience</div>
               </div>
             </div>
           </motion.div>

@@ -23,7 +23,7 @@ const CompanyStory = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
                 Building Excellence{' '}
                 <span className="bg-gradient-to-r from-amber-600 via-orange-500 to-red-500 bg-clip-text text-transparent">
-                  Since 2010
+                  Since 2024
                 </span>
               </h2>
             </div>
@@ -88,7 +88,7 @@ const CompanyStory = () => {
             </div>
             
             {/* Floating Stats */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -99,7 +99,7 @@ const CompanyStory = () => {
                 <div className="text-2xl font-bold">15+</div>
                 <div className="text-sm font-medium">Years Experience</div>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Decorative Elements */}
             <div className="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-amber-400/30 to-orange-500/30 rounded-full blur-xl"></div>
