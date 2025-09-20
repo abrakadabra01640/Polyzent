@@ -29,7 +29,7 @@ const Products = () => {
             </h1>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto">
               Discover our comprehensive range of premium packaging solutions designed 
-              to meet diverse industry needs with uncompromising quality.
+              to meet diverse industry needs with uncompromising quality. Manufactured in Lynchberg, Virginia. Made in USA.
             </p>
           </motion.div>
         </div>

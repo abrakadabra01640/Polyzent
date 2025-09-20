@@ -43,7 +43,7 @@ const AboutPreview = () => {
               </p>
               
               <p className="text-lg">
-                <strong className="text-slate-900">Company Profile:</strong> Founded in 2010, 
+                <strong className="text-slate-900">Company Profile:</strong> Founded in 2025, 
                 Polyzent Trading Inc has grown from a small startup to a leading manufacturer 
                 serving diverse industries worldwide. Our state-of-the-art facilities and 
                 experienced team ensure consistent quality and reliable service.
@@ -110,7 +110,7 @@ const AboutPreview = () => {
             </div>
 
             {/* Floating certification badge */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -121,7 +121,7 @@ const AboutPreview = () => {
                 <div className="text-amber-600 font-bold text-sm mb-1">ISO</div>
                 <div className="text-xs text-slate-600">9001:2015</div>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Floating quality badge */}
             <motion.div

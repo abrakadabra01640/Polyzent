@@ -181,7 +181,7 @@ const ContactForm = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none transition-all duration-300"
-                    placeholder="+91 12345 67890"
+                    placeholder="+1 12345 67890"
                   />
                 </div>
               </div>
@@ -262,7 +262,7 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-1">Email</h4>
-                  <p className="text-slate-600 mb-2">info@polyzentrading.com</p>
+                  <p className="text-slate-600 mb-2">info@polyzent.com</p>
                   <p className="text-sm text-slate-500">We'll respond within 24 hours</p>
                 </div>
               </div>

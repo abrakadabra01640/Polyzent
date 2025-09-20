@@ -23,7 +23,7 @@ const CompanyStory = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
                 Building Excellence{' '}
                 <span className="bg-gradient-to-r from-amber-600 via-orange-500 to-red-500 bg-clip-text text-transparent">
-                  Since 2024
+                  Since 2025
                 </span>
               </h2>
             </div>
@@ -52,7 +52,7 @@ const CompanyStory = () => {
             </div>
 
             {/* Key Highlights */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -67,7 +67,7 @@ const CompanyStory = () => {
                 <div className="text-3xl font-bold text-slate-900 mb-2">50+</div>
                 <div className="text-sm text-slate-600">Countries Served</div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Image */}

@@ -31,7 +31,7 @@ const Landing = () => {
       <AboutPreview />
       <WhyChooseUs />
       <IndustriesWeServe />
-      <Testimonials />
+      {/* <Testimonials /> */}
       {/* <QuickStats /> */}
       <ContactCTA />
       {/* <FinalCTA /> */}

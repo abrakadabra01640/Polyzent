@@ -59,8 +59,9 @@ const AboutHero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-12 max-w-4xl mx-auto"
         >
-          Delivering premium packaging solutions for global industries since 2010. 
-          Trusted by 500+ companies worldwide for innovation, quality, and sustainability.
+          Delivering premium packaging solutions for global industries since 2025. 
+          Trusted by companies worldwide for innovation, quality, and sustainability.
+          Manufacturing in Lynchberg, Virginia. Made in USA.
         </motion.p>
 
         <motion.div

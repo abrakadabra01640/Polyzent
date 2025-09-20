@@ -56,8 +56,8 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Specializing in Shrink Wrap Films, Bubble Wrap, and Custom Packaging Products. 
-          Trusted by 500+ companies worldwide for quality and reliability.
+          Specializing in Stretch Wrap Films, Bubble Wrap, and Custom Packaging Products. 
+          Trusted by companies worldwide for quality and reliability. Made in USA.
         </motion.p>
 
         {/* CTA Buttons */}

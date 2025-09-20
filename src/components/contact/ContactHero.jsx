@@ -58,7 +58,7 @@ const ContactHero = () => {
                 </div>
                 <div>
                   <p className="text-sm text-slate-400">Email Us</p>
-                  <p className="text-white font-medium">info@polyzentrading.com</p>
+                  <p className="text-white font-medium">info@polyzent.com</p>
                 </div>
               </div>
             </div>

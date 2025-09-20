@@ -91,17 +91,20 @@ const AboutCTA = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
           >
-            <CTAButton 
-              variant="primary" 
-              size="lg"
-              className="min-w-[220px] shadow-harvest-gold"
-            >
-              Get in Touch
-              <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-              </svg>
-            </CTAButton>
+<a href="mailto:info@polyzent.com">
+  <CTAButton 
+    variant="primary" 
+    size="lg"
+    className="min-w-[220px] shadow-harvest-gold"
+  >
+    Get in Touch
+    <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+    </svg>
+  </CTAButton>
+</a>
+
             
             <CTAButton 
               variant="outline" 
@@ -154,13 +157,13 @@ const AboutCTA = () => {
                   <span className="text-sm">Available Now</span>
                 </div>
                 <div className="w-1 h-4 bg-gray-600"></div>
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2 text-harvest-gold" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
                   <span className="text-sm">Trusted by 500+ Companies</span>
-                </div>
-                <div className="w-1 h-4 bg-gray-600"></div>
+                </div> */}
+                {/* <div className="w-1 h-4 bg-gray-600"></div> */}
                 <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2 text-harvest-gold" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>

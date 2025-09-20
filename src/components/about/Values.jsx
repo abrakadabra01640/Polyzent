@@ -116,7 +116,7 @@ const Values = () => {
               interaction, every product, and every solution we deliver.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <div className="flex items-center text-amber-400">
+              {/* <div className="flex items-center text-amber-400">
                 <div className="w-2 h-2 bg-amber-400 rounded-full mr-2"></div>
                 <span className="text-sm">Trusted by 500+ companies</span>
               </div>
@@ -127,7 +127,7 @@ const Values = () => {
               <div className="flex items-center text-amber-400">
                 <div className="w-2 h-2 bg-amber-400 rounded-full mr-2"></div>
                 <span className="text-sm">Global reach, local service</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </motion.div>

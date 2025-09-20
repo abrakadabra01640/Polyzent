@@ -61,10 +61,10 @@ const WhyChooseUs = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="absolute -bottom-6 -right-6 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-2xl p-6 shadow-xl"
             >
-              {/* <div className="text-center">
-                <div className="text-3xl font-bold mb-1">15+</div>
-                <div className="text-sm font-medium">Years Experience</div>
-              </div> */}
+              <div className="text-center">
+                <div className="text-3xl font-bold mb-1">Manufactured in</div>
+                <div className="text-sm font-medium">Lynchberg, Virginia</div>
+              </div>
             </motion.div>
 
             {/* Decorative Elements */}
