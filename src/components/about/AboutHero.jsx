@@ -61,7 +61,7 @@ const AboutHero = () => {
         >
           Delivering premium packaging solutions for global industries since 2025. 
           Trusted by companies worldwide for innovation, quality, and sustainability.
-          Manufacturing in Lynchberg, Virginia. Made in USA.
+          Manufacturing in Lynchburg, Virginia. Made in USA.
         </motion.p>
 
         <motion.div

@@ -44,9 +44,9 @@ const AboutPreview = () => {
               
               <p className="text-lg">
                 <strong className="text-slate-900">Company Profile:</strong> Founded in 2025, 
-                Polyzent Trading Inc has grown from a small startup to a leading manufacturer 
+                Polyzent Trading Inc is a small startup aim to be a leading manufacturer 
                 serving diverse industries worldwide. Our state-of-the-art facilities and 
-                experienced team ensure consistent quality and reliable service.
+                team ensure consistent quality and reliable service.
               </p>
             </div>
 

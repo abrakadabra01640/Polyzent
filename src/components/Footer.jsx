@@ -84,7 +84,7 @@ const Footer = () => {
                         </div>
                         
                         <p className="text-gray-300 mb-6 leading-relaxed text-lg max-w-md">
-                            Delivering excellence through innovation. We create premium solutions that drive success for businesses worldwide. Manufacturing in Lynchberg, Virginia. Made in USA.
+                            Delivering excellence through innovation. We create premium solutions that drive success for businesses worldwide. Manufacturing in Lynchburg, Virginia. Made in USA.
                         </p>
 
                         {/* Contact Info */}

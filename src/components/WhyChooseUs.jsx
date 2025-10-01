@@ -63,7 +63,7 @@ const WhyChooseUs = () => {
             >
               <div className="text-center">
                 <div className="text-3xl font-bold mb-1">Manufactured in</div>
-                <div className="text-sm font-medium">Lynchberg, Virginia</div>
+                <div className="text-sm font-medium">Lynchburg, Virginia</div>
               </div>
             </motion.div>
 
