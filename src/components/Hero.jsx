@@ -57,7 +57,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           Specializing in Stretch Wrap Films, Bubble Wrap, and Custom Packaging Products. 
-          Trusted by companies worldwide for quality and reliability. Made in USA.
+          Trusted by companies worldwide for quality and reliability. Manufacturing in Lynchburg, Virginia. Made in USA.
         </motion.p>
 
         {/* CTA Buttons */}

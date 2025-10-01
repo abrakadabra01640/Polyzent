@@ -334,7 +334,7 @@ const ProductDetail = () => {
       </section>
 
       {/* Certifications Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50">
+      {/* <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -372,7 +372,7 @@ const ProductDetail = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Related Products */}
       {relatedProducts.length > 0 && (

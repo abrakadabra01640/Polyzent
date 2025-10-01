@@ -29,25 +29,12 @@ const CompanyStory = () => {
             </div>
 
             <div className="space-y-6 text-slate-600 leading-relaxed">
-              <p className="text-lg">
-                Polyzent Trading Inc was founded with a revolutionary vision: to transform the packaging 
-                industry through innovative, sustainable, and premium-quality solutions. What started as 
-                a small venture has evolved into a leading manufacturer serving diverse industries across 
-                the globe.
+              <p>
+                Polyzent Trading Inc was founded with a bold vision to redefine the packaging industry through innovative, sustainable, and premium-quality solutions. As a young startup, we are driven by passion and creativity, working closely as a small yet determined team to deliver packaging that not only protects but also elevates brand value.
               </p>
               
               <p>
-                Our journey began in a modest facility with a team of passionate professionals who 
-                believed in the power of quality packaging to protect products and enhance brand value. 
-                Through relentless dedication to excellence and continuous innovation, we've expanded 
-                our operations, upgraded our technology, and built lasting partnerships with clients 
-                worldwide.
-              </p>
-              
-              <p>
-                Today, we operate state-of-the-art manufacturing facilities equipped with cutting-edge 
-                technology and staffed by industry experts. Our commitment to sustainability, quality 
-                assurance, and customer satisfaction has made us a trusted name in the packaging industry.
+                We embrace fresh ideas, modern technology, and sustainable practices to craft solutions that meet the evolving needs of businesses today. With our customer-first approach, Polyzent aims to build strong partnerships and establish itself as a trusted name in the packaging space while steadily growing and innovating.
               </p>
             </div>
 
