@@ -12,8 +12,8 @@ const AboutCTA = () => {
       ),
       title: 'Call Us',
       description: 'Speak with our experts',
-      action: '+91 98765 43210',
-      link: 'tel:+919876543210',
+      action: '+1 815 329 4126',
+      link: 'tel:+18153294126',
     },
     {
       icon: (
@@ -26,21 +26,10 @@ const AboutCTA = () => {
       action: 'info@polyzentrading.com',
       link: 'mailto:info@polyzentrading.com',
     },
-    {
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 9l2 2 4-4m0-6v6a2 2 0 01-2 2H9a2 2 0 01-2-2V9a2 2 0 012-2h2a2 2 0 012 2z" />
-        </svg>
-      ),
-      title: 'Schedule Meeting',
-      description: 'Book a consultation',
-      action: 'Book Now',
-      link: '#',
-    },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-dark-slate via-gray-800 to-dark-slate">
+    <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white">
           <motion.div
@@ -50,11 +39,18 @@ const AboutCTA = () => {
             transition={{ duration: 0.6 }}
             className="mb-12"
           >
-            <span className="text-amber-400 font-medium text-sm tracking-wider uppercase">Ready to Get Started?</span>
-            <h2 className="text-4xl md:text-6xl font-bold mt-4 mb-6">
-              Partner with <span className="text-amber-400">Polyzent</span> for Your Packaging Needs
+            <div className="inline-flex items-center px-4 py-2 bg-amber-500/10 text-amber-400 rounded-full text-sm font-medium mb-6">
+              <span className="w-2 h-2 bg-amber-400 rounded-full mr-2 animate-pulse"></span>
+              Ready to Get Started?
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Partner with{' '}
+              <span className="bg-gradient-to-r from-amber-400 via-orange-500 to-red-500 bg-clip-text text-transparent">
+                Polyzent
+              </span>{' '}
+              for Your Packaging Needs
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
               Join hundreds of satisfied clients who trust us with their packaging requirements. 
               Let's discuss how we can help protect and enhance your products.
             </p>
@@ -66,7 +62,7 @@ const AboutCTA = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12"
           >
             {contactMethods.map((method, index) => (
               <div key={method.title} className="group">
@@ -95,17 +91,20 @@ const AboutCTA = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
           >
-            <CTAButton 
-              variant="primary" 
-              size="lg"
-              className="min-w-[220px] shadow-harvest-gold"
-            >
-              Get in Touch
-              <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
-              </svg>
-            </CTAButton>
+<a href="mailto:info@polyzent.com">
+  <CTAButton 
+    variant="primary" 
+    size="lg"
+    className="min-w-[220px] shadow-harvest-gold"
+  >
+    Get in Touch
+    <svg className="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+    </svg>
+  </CTAButton>
+</a>
+
             
             <CTAButton 
               variant="outline" 
@@ -127,7 +126,7 @@ const AboutCTA = () => {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="border-t border-white/20 pt-8"
           >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-8 text-center">
               <div>
                 <div className="text-2xl font-bold text-amber-400 mb-1">24/7</div>
                 <div className="text-sm text-slate-400">Customer Support</div>
@@ -139,10 +138,6 @@ const AboutCTA = () => {
               <div>
                 <div className="text-2xl font-bold text-amber-400 mb-1">99.8%</div>
                 <div className="text-sm text-slate-400">Client Satisfaction</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-amber-400 mb-1">15+</div>
-                <div className="text-sm text-slate-400">Years Experience</div>
               </div>
             </div>
           </motion.div>
@@ -162,13 +157,13 @@ const AboutCTA = () => {
                   <span className="text-sm">Available Now</span>
                 </div>
                 <div className="w-1 h-4 bg-gray-600"></div>
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2 text-harvest-gold" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                   </svg>
                   <span className="text-sm">Trusted by 500+ Companies</span>
-                </div>
-                <div className="w-1 h-4 bg-gray-600"></div>
+                </div> */}
+                {/* <div className="w-1 h-4 bg-gray-600"></div> */}
                 <div className="flex items-center">
                   <svg className="w-4 h-4 mr-2 text-harvest-gold" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>

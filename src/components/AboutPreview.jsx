@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-
+import heroimg from '../Assets/hero.jpg'
 const AboutPreview = () => {
   return (
     <section className="py-24 bg-gradient-to-br from-slate-50 via-white to-blue-50">
@@ -43,10 +43,10 @@ const AboutPreview = () => {
               </p>
               
               <p className="text-lg">
-                <strong className="text-slate-900">Company Profile:</strong> Founded in 2010, 
-                Polyzent Trading Inc has grown from a small startup to a leading manufacturer 
+                <strong className="text-slate-900">Company Profile:</strong> Founded in 2025, 
+                Polyzent Trading Inc is a small startup aim to be a leading manufacturer 
                 serving diverse industries worldwide. Our state-of-the-art facilities and 
-                experienced team ensure consistent quality and reliable service.
+                team ensure consistent quality and reliable service.
               </p>
             </div>
 
@@ -58,7 +58,7 @@ const AboutPreview = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="grid grid-cols-3 gap-6"
             >
-              <div className="bg-white rounded-2xl p-4 shadow-lg border border-slate-100 text-center">
+              {/* <div className="bg-white rounded-2xl p-4 shadow-lg border border-slate-100 text-center">
                 <div className="text-2xl font-bold text-amber-600 mb-1">500+</div>
                 <div className="text-sm text-slate-600">Happy Clients</div>
               </div>
@@ -69,7 +69,7 @@ const AboutPreview = () => {
               <div className="bg-white rounded-2xl p-4 shadow-lg border border-slate-100 text-center">
                 <div className="text-2xl font-bold text-amber-600 mb-1">15+</div>
                 <div className="text-sm text-slate-600">Years Experience</div>
-              </div>
+              </div> */}
             </motion.div>
 
             {/* CTA Button */}
@@ -102,7 +102,7 @@ const AboutPreview = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                src= {heroimg}
                 alt="Polyzent Trading Inc manufacturing facility"
                 className="w-full h-96 object-cover"
               />
@@ -110,7 +110,7 @@ const AboutPreview = () => {
             </div>
 
             {/* Floating certification badge */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -121,7 +121,7 @@ const AboutPreview = () => {
                 <div className="text-amber-600 font-bold text-sm mb-1">ISO</div>
                 <div className="text-xs text-slate-600">9001:2015</div>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Floating quality badge */}
             <motion.div

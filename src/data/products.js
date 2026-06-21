@@ -1,21 +1,25 @@
+import Shrink from '../Assets/shrinkproduct.jpg'
+import bubble from '../Assets/BubbleWrap.avif'
+import liner from '../Assets/Liner-bag.webp'
+import jumbo from '../Assets/jumboproduct.png'
+import hdpe from '../Assets/hdpe.jpg'
+import paper from '../Assets/paperbags.jpg'
+import ppe from '../Assets/ppe.jpeg'
+
 export const products = [
   {
     id: 'stretch-film',
     name: 'Stretch Film',
     category: 'Pallet Wrapping',
     description: 'Industrial-grade stretch films engineered for superior load containment and pallet stability. Our multi-layer co-extruded films deliver exceptional puncture resistance and cling properties.',
-    image: '/images/products/stretch-film.jpg',
-    price: 'Starting from $0.85/kg',
+    image: Shrink,
+    price: ' $0.85/kg',
     minOrder: '500 kg',
     features: [
-      'Multi-layer co-extrusion technology',
-      'Superior load holding force (up to 300% stretch)',
-      'Excellent puncture and tear resistance',
-      'UV stabilized for outdoor storage',
-      'Pre-stretched options available',
-      'Machine and hand grade variants',
-      'Silent unwind technology',
-      'Temperature resistant (-40°C to +60°C)'
+      'Superior puncture resistance for secure load containment',
+      '99.9% load stability ensures safe transportation',
+      'Exceptional 500% stretch capability for cost efficiency',
+      'UV stabilized for outdoor storage applications'
     ],
     benefits: [
       'Reduces product damage by 95%',
@@ -50,8 +54,8 @@ export const products = [
     name: 'Liner Bags',
     category: 'Industrial Liners',
     description: 'Heavy-duty polyethylene liner bags designed for bulk container protection. Engineered to withstand industrial environments while maintaining product integrity.',
-    image: '/images/products/liner-bags.jpg',
-    price: 'Starting from $2.50/piece',
+    image: liner,
+    price: ' $2.50/piece',
     minOrder: '1000 pieces',
     features: [
       'High-density polyethylene construction',
@@ -95,8 +99,8 @@ export const products = [
     name: 'Jumbo Bags (FIBC)',
     category: 'Bulk Packaging',
     description: 'Premium flexible intermediate bulk containers (FIBC) manufactured with virgin polypropylene fabric. Designed for safe handling of bulk materials up to 2000kg capacity.',
-    image: '/images/products/jumbo-bags.jpg',
-    price: 'Starting from $8.50/piece',
+    image: jumbo,
+    price: ' $8.50/piece',
     minOrder: '100 pieces',
     features: [
       'Virgin polypropylene woven fabric',
@@ -141,8 +145,8 @@ export const products = [
     name: 'Bubble Wrap',
     category: 'Protective Packaging',
     description: 'Multi-layer bubble cushioning films providing superior shock absorption and protection. Available in various bubble sizes and barrier properties for diverse applications.',
-    image: '/images/products/bubble-wrap.jpg',
-    price: 'Starting from $1.20/m²',
+    image: bubble,
+    price: ' $1.20/m²',
     minOrder: '500 m²',
     features: [
       'Co-extruded barrier films',
@@ -187,8 +191,8 @@ export const products = [
     name: 'HDPE Bags',
     category: 'Flexible Packaging',
     description: 'High-density polyethylene bags offering exceptional strength and chemical resistance. Manufactured using blown film technology for consistent quality and performance.',
-    image: '/images/products/hdpe-bags.jpg',
-    price: 'Starting from $0.15/piece',
+    image: hdpe,
+    price: '$0.15/piece',
     minOrder: '10,000 pieces',
     features: [
       'High-density polyethylene construction',
@@ -228,59 +232,59 @@ export const products = [
     ],
     certifications: ['FDA 21 CFR 177.1520', 'EU 10/2011', 'ISO 9001:2015', 'BRC Packaging']
   },
-  {
-    id: 'paper-bags',
-    name: 'Paper Bags',
-    category: 'Eco-Friendly Packaging',
-    description: 'Sustainable kraft paper bags manufactured from recycled and virgin materials. Offering excellent printability and strength for retail and industrial applications.',
-    image: '/images/products/paper-bags.jpg',
-    price: 'Starting from $0.25/piece',
-    minOrder: '5,000 pieces',
-    features: [
-      'Virgin and recycled kraft paper',
-      'Water-based inks and adhesives',
-      'Multiple handle options',
-      'Grease and moisture resistant coatings',
-      'Custom printing and branding',
-      'Reinforced bottom construction',
-      'Biodegradable and compostable',
-      'FSC certified materials'
-    ],
-    benefits: [
-      '100% recyclable and biodegradable',
-      'Enhanced brand visibility',
-      'Consumer preference for eco-friendly',
-      'Strong load-bearing capacity',
-      'Cost-effective marketing tool',
-      'Regulatory compliance ready'
-    ],
-    specifications: {
-      material: 'Kraft paper 70-300 GSM',
-      sizes: '6" x 9" to 18" x 24"',
-      handles: 'Twisted, flat, rope, die-cut',
-      printing: 'Flexo, offset, digital',
-      coating: 'PE, PLA, or barrier coatings',
-      capacity: '2-25 kg load bearing',
-      applications: ['Retail bags', 'Food service', 'Gift packaging']
-    },
-    applications: [
-      'Retail and shopping centers',
-      'Food service and restaurants',
-      'Grocery and supermarkets',
-      'Gift and promotional packaging',
-      'Pharmaceutical packaging',
-      'Industrial component packaging',
-      'Event and conference materials'
-    ],
-    certifications: ['FSC Certified', 'PEFC Chain of Custody', 'Compostable ASTM D6400', 'FDA Food Contact']
-  },
+  // {
+  //   id: 'paper-bags',
+  //   name: 'Paper Bags',
+  //   category: 'Eco-Friendly Packaging',
+  //   description: 'Sustainable kraft paper bags manufactured from recycled and virgin materials. Offering excellent printability and strength for retail and industrial applications.',
+  //   image: paper,
+  //   price: '$0.25/piece',
+  //   minOrder: '5,000 pieces',
+  //   features: [
+  //     'Virgin and recycled kraft paper',
+  //     'Water-based inks and adhesives',
+  //     'Multiple handle options',
+  //     'Grease and moisture resistant coatings',
+  //     'Custom printing and branding',
+  //     'Reinforced bottom construction',
+  //     'Biodegradable and compostable',
+  //     'FSC certified materials'
+  //   ],
+  //   benefits: [
+  //     '100% recyclable and biodegradable',
+  //     'Enhanced brand visibility',
+  //     'Consumer preference for eco-friendly',
+  //     'Strong load-bearing capacity',
+  //     'Cost-effective marketing tool',
+  //     'Regulatory compliance ready'
+  //   ],
+  //   specifications: {
+  //     material: 'Kraft paper 70-300 GSM',
+  //     sizes: '6" x 9" to 18" x 24"',
+  //     handles: 'Twisted, flat, rope, die-cut',
+  //     printing: 'Flexo, offset, digital',
+  //     coating: 'PE, PLA, or barrier coatings',
+  //     capacity: '2-25 kg load bearing',
+  //     applications: ['Retail bags', 'Food service', 'Gift packaging']
+  //   },
+  //   applications: [
+  //     'Retail and shopping centers',
+  //     'Food service and restaurants',
+  //     'Grocery and supermarkets',
+  //     'Gift and promotional packaging',
+  //     'Pharmaceutical packaging',
+  //     'Industrial component packaging',
+  //     'Event and conference materials'
+  //   ],
+  //   certifications: ['FSC Certified', 'PEFC Chain of Custody', 'Compostable ASTM D6400', 'FDA Food Contact']
+  // },
   {
     id: 'pp-strip-roll',
     name: 'PP Strip Roll',
     category: 'Strapping Materials',
     description: 'High-tensile polypropylene strapping rolls designed for heavy-duty bundling and securing applications. Manufactured with advanced polymer technology for maximum strength.',
-    image: '/images/products/pp-strip-roll.jpg',
-    price: 'Starting from $1.80/kg',
+    image: ppe,
+    price: ' $1.80/kg',
     minOrder: '200 kg',
     features: [
       'High-grade polypropylene resin',

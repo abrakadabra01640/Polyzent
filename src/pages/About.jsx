@@ -14,7 +14,7 @@ const About = () => {
       <CompanyStory />
       <VisionMission />
       <Values />
-      <Sustainability />
+      {/* <Sustainability /> */}
       <IndustriesWeServe />
       <AboutCTA />
     </div>

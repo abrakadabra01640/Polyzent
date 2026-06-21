@@ -23,36 +23,23 @@ const CompanyStory = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
                 Building Excellence{' '}
                 <span className="bg-gradient-to-r from-amber-600 via-orange-500 to-red-500 bg-clip-text text-transparent">
-                  Since 2010
+                  Since 2025
                 </span>
               </h2>
             </div>
 
             <div className="space-y-6 text-slate-600 leading-relaxed">
-              <p className="text-lg">
-                Polyzent Trading Inc was founded with a revolutionary vision: to transform the packaging 
-                industry through innovative, sustainable, and premium-quality solutions. What started as 
-                a small venture has evolved into a leading manufacturer serving diverse industries across 
-                the globe.
+              <p>
+                Polyzent Trading Inc was founded with a bold vision to redefine the packaging industry through innovative, sustainable, and premium-quality solutions. As a young startup, we are driven by passion and creativity, working closely as a small yet determined team to deliver packaging that not only protects but also elevates brand value.
               </p>
               
               <p>
-                Our journey began in a modest facility with a team of passionate professionals who 
-                believed in the power of quality packaging to protect products and enhance brand value. 
-                Through relentless dedication to excellence and continuous innovation, we've expanded 
-                our operations, upgraded our technology, and built lasting partnerships with clients 
-                worldwide.
-              </p>
-              
-              <p>
-                Today, we operate state-of-the-art manufacturing facilities equipped with cutting-edge 
-                technology and staffed by industry experts. Our commitment to sustainability, quality 
-                assurance, and customer satisfaction has made us a trusted name in the packaging industry.
+                We embrace fresh ideas, modern technology, and sustainable practices to craft solutions that meet the evolving needs of businesses today. With our customer-first approach, Polyzent aims to build strong partnerships and establish itself as a trusted name in the packaging space while steadily growing and innovating.
               </p>
             </div>
 
             {/* Key Highlights */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -67,7 +54,7 @@ const CompanyStory = () => {
                 <div className="text-3xl font-bold text-slate-900 mb-2">50+</div>
                 <div className="text-sm text-slate-600">Countries Served</div>
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Image */}
@@ -88,7 +75,7 @@ const CompanyStory = () => {
             </div>
             
             {/* Floating Stats */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -99,7 +86,7 @@ const CompanyStory = () => {
                 <div className="text-2xl font-bold">15+</div>
                 <div className="text-sm font-medium">Years Experience</div>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Decorative Elements */}
             <div className="absolute -top-4 -left-4 w-20 h-20 bg-gradient-to-br from-amber-400/30 to-orange-500/30 rounded-full blur-xl"></div>
