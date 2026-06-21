@@ -59,9 +59,8 @@ const AboutHero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl text-slate-300 leading-relaxed mb-12 max-w-4xl mx-auto"
         >
-          Delivering premium packaging solutions for global industries since 2025. 
-          Trusted by companies worldwide for innovation, quality, and sustainability.
-          Manufacturing in Lynchburg, Virginia. Made in USA.
+          Delivering premium packaging solutions for global industries since 2010. 
+          Trusted by 500+ companies worldwide for innovation, quality, and sustainability.
         </motion.p>
 
         <motion.div
@@ -70,7 +69,7 @@ const AboutHero = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto"
         >
-          {/* <div className="text-center">
+          <div className="text-center">
             <div className="text-3xl font-bold text-amber-400 mb-2">15+</div>
             <div className="text-slate-300 text-sm">Years of Excellence</div>
           </div>
@@ -81,7 +80,7 @@ const AboutHero = () => {
           <div className="text-center">
             <div className="text-3xl font-bold text-amber-400 mb-2">50+</div>
             <div className="text-slate-300 text-sm">Countries Served</div>
-          </div> */}
+          </div>
         </motion.div>
       </div>
     </section>

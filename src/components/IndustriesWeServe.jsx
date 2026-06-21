@@ -156,12 +156,9 @@ const IndustriesWeServe = () => {
             <div className="text-slate-600">
               Need a custom solution?
             </div>
-            <a href="/contact">
-  <button className="px-8 py-3 bg-gradient-to-r from-slate-900 to-slate-700 text-white rounded-full font-medium hover:from-slate-800 hover:to-slate-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
-    Get in Touch
-  </button>
-</a>
-
+            <button className="px-8 py-3 bg-gradient-to-r from-slate-900 to-slate-700 text-white rounded-full font-medium hover:from-slate-800 hover:to-slate-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+              Get in Touch
+            </button>
           </div>
         </div>
       </div>

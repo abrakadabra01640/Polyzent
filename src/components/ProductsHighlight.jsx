@@ -3,40 +3,38 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import BubbleWrap from '../Assets/BubbleWrap.avif';
 import ShrinkWrap from '../Assets/ShrinkWrap.jpg';
-import JumboBag from '../Assets/jumboproduct.png';
-import hdpe from '../Assets/hdpe.jpg'
+import JumboBag from '../Assets/JumboBag.jpg';
 
 const ProductsHighlight = () => {
   const products = [
     {
       id: 1,
-      name: 'Stretch Film Wrap',
+      name: 'Shrink Wrap Film',
       description: 'High-quality shrink films for secure packaging and product protection.',
       image: ShrinkWrap,
-      link: '/products/stretch-film'
+      link: '/products/shrink-wrap-film'
     },
     {
       id: 2,
       name: 'Bubble Wrap',
-      description: 'Superior cushioning protection for fragile items during shipping & transits.',
+      description: 'Superior cushioning protection for fragile items during shipping.',
       image: BubbleWrap,
       link: '/products/bubble-wrap'
     },
     {
       id: 3,
       name: 'Jumbo Bags',
-      description: 'Heavy-duty FIBC bags designed to ensure efficient bulk material management and logistics.',
+      description: 'Heavy-duty FIBC bags for bulk material handling and storage.',
       image: JumboBag,
       link: '/products/jumbo-bags'
     },
     {
-  id: 4,
-  name: 'HDPE Bags',
-  description: 'Durable and versatile HDPE bags suitable for industrial and commercial packaging needs.',
-  image: hdpe,
-  link: '/products/hdpe-bags'
-}
-
+      id: 4,
+      name: 'Custom Solutions',
+      description: 'Tailored packaging solutions designed for your specific requirements.',
+      image: 'https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
+      link: '/contact'
+    }
   ];
 
   return (
@@ -92,26 +90,9 @@ const ProductsHighlight = () => {
 
                   {/* Content */}
                   <div className="p-6">
-                    <div className="flex items-start justify-between mb-6">
-                      <h3 className="text-xl font-bold text-amber-600 group-hover:text-orange-600 transition-colors duration-300 leading-tight">
-                        {product.name}
-                      </h3>
-                      {product.price && (
-                        <div className="text-right">
-                          <div className="text-sm text-slate-600 mb-1">
-                            Starting from
-                          </div>
-                          <div className="text-lg font-bold text-amber-600">
-                            {product.price}
-                          </div>
-                          {product.minOrder && (
-                            <div className="text-xs text-slate-500 mt-1">
-                              MOQ: {product.minOrder}
-                            </div>
-                          )}
-                        </div>
-                      )}
-                    </div>
+                    <h3 className="text-xl font-semibold text-slate-900 mb-3 group-hover:text-amber-600 transition-colors duration-300">
+                      {product.name}
+                    </h3>
                     <p className="text-slate-600 text-sm leading-relaxed mb-4">
                       {product.description}
                     </p>
@@ -140,15 +121,12 @@ const ProductsHighlight = () => {
                   <h3 className="text-lg font-bold text-slate-900 mb-1">Need Something Specific?</h3>
                   <p className="text-slate-600 text-sm">Explore our complete product catalog</p>
                 </div>
-                <a href="/products" target="_self" rel="noopener noreferrer">
-  <button className="px-8 py-4 bg-gradient-to-r from-slate-900 to-slate-700 text-white font-semibold rounded-xl hover:from-slate-800 hover:to-slate-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center">
-    View All Products
-    <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-    </svg>
-  </button>
-</a>
-
+                <button className="px-8 py-4 bg-gradient-to-r from-slate-900 to-slate-700 text-white font-semibold rounded-xl hover:from-slate-800 hover:to-slate-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center">
+                  View All Products
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
