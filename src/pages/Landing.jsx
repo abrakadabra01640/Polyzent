@@ -28,13 +28,13 @@ const Landing = () => {
     <div className="overflow-x-hidden">
       <Hero />
       <ProductsHighlight />
-      <AboutPreview />
       <WhyChooseUs />
       <IndustriesWeServe />
-      {/* <Testimonials /> */}
-      {/* <QuickStats /> */}
+      <AboutPreview />
+      <Testimonials />
+      <QuickStats />
       <ContactCTA />
-      {/* <FinalCTA /> */}
+      <FinalCTA />
     </div>
   );
 };
